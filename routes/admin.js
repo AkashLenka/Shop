@@ -45,7 +45,7 @@ const adminBro = new AdminBro({
             isVisible: { list: false, filter: false, show: true, edit: true },
             components: {
               show: AdminBro.bundle(
-                "../components/admin-imgPath-component.jsx"
+                "../components/admin-imgPath-component"
               ),
             },
           },
@@ -95,7 +95,7 @@ const adminBro = new AdminBro({
           cart: {
             isVisible: { list: false, filter: false, show: true, edit: false },
             components: {
-              show: AdminBro.bundle("../components/admin-order-component.jsx"),
+              show: AdminBro.bundle("../components/admin-order-component"),
             },
           },
           "cart.items": {
@@ -158,13 +158,13 @@ const adminBro = new AdminBro({
     },
   },
   dashboard: {
-    component: AdminBro.bundle("../components/admin-dashboard-component.jsx"),
+    component: AdminBro.bundle("../components/admin-dashboard-component"),
   },
 });
 
 const ADMIN = {
-  email: process.env.ADMIN_EMAIL,
-  password: process.env.ADMIN_PASSWORD,
+  email: "akash.lenka.2001@gmail.com",
+  password: "lala",
 };
 
 const router = AdminBroExpress.buildAuthenticatedRouter(adminBro, {
@@ -174,8 +174,8 @@ const router = AdminBroExpress.buildAuthenticatedRouter(adminBro, {
     }
     return null;
   },
-  cookieName: process.env.ADMIN_COOKIE_NAME,
-  cookiePassword: process.env.ADMIN_COOKIE_PASSWORD,
+  cookieName: "process.env.ADMIN_COOKIE_NAME",
+  cookiePassword: "process.env.ADMIN_COOKIE_PASSWORD",
 });
 
 module.exports = router;
