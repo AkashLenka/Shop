@@ -157,3 +157,4 @@ Below is the color palette used in this application:
 - MIT License
 - Copyright 2020 © [Maryam Aljanabi](https://github.com/maryamaljanabi)
 # Shop
+# Shop
