@@ -10,6 +10,7 @@ async function seedDB() {
     try {
       const categ = await new Category({ title: titleStr });
       await categ.save();
+      console.log("saved" + titleStr);
     } catch (error) {
       console.log(error);
       return error;
